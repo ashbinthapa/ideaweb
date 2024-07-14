@@ -1,7 +1,7 @@
 <!-- resources/views/index.blade.php -->
 @extends('layouts.app')
 
-@section('title', 'Home')
+@section('title', 'IDEA - Improving Learning: Developing Measures of Accountability and Evaluating their Association with Student’s Gains in Achievement in Nepal')
 
 @section('content')
     <h1>Welcome to the Home Page</h1>

@@ -1,4 +1,7 @@
 <!-- resources/views/partials/header.blade.php -->
+<div class="container">
+    <p>{{ $formattedDate }}</p>    
+</div>
 <nav>
     <ul>
         <li><a href="{{ url('/') }}">Home</a></li>

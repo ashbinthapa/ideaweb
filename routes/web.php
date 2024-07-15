@@ -2,6 +2,12 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('index');
-});
+use App\Http\Controllers\HeaderController;
+
+
+Route::get('/', [HeaderController::class, 'getlivedate']);
+
+Route::get('/header', [HeaderController::class, 'getlivedate']);
+
+
+

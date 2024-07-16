@@ -27,3 +27,43 @@ nav ul li a {
     color: #333;
     font-weight: bold;
 }
+
+
+/* css for news ticker */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.ticker {
+    height: 50px; /* Adjust the height as needed */
+    overflow: hidden;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f7f7f7;
+    position: relative;
+}
+
+.ticker__wrap {
+    display: flex;
+    flex-direction: column;
+    animation: ticker 10s linear infinite;
+    position: absolute;
+    top: 0; /* Start the animation from the bottom */
+}
+
+.ticker__item {
+    height: 50px; /* Should match the height of the ticker */
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+@keyframes ticker {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}

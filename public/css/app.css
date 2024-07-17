@@ -1,4 +1,43 @@
 /* public/css/app.css */
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -31,39 +70,22 @@ nav ul li a {
 
 /* css for news ticker */
 
-body {
-    font-family: Arial, sans-serif;
-}
-
-.ticker {
-    height: 50px; /* Adjust the height as needed */
+.ticker-container {
+    width: 300px;
+    height: 50px;
     overflow: hidden;
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: #f7f7f7;
+    border: 1px solid #444;
+    background-color: #fff;
     position: relative;
 }
 
-.ticker__wrap {
-    display: flex;
-    flex-direction: column;
-    animation: ticker 10s linear infinite;
+.ticker-item {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
     position: absolute;
-    top: 0; /* Start the animation from the bottom */
-}
-
-.ticker__item {
-    height: 50px; /* Should match the height of the ticker */
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-}
-
-@keyframes ticker {
-    0% {
-        transform: translateY(100%);
-    }
-    100% {
-        transform: translateY(-100%);
-    }
+    top: 0;
+    left: 0;
+    transition: top 0.5s ease-in-out;
 }

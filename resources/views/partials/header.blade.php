@@ -3,13 +3,22 @@
     <p>{{ $formattedDate }}</p>    
 </div>
 <div class="container">
-<div class="ticker-container">
+    <div>
+        Latest:
+    </div>
+    <div class="ticker-container">
         <div class="ticker-item">Apple in a Basket</div>
         <div class="ticker-item">Boy at the Park</div>
         <div class="ticker-item">Cat on the Rooftop</div>
         <div class="ticker-item">Dog in the Kennel</div>
         <div class="ticker-item">Eggs in the Bowl</div>
     </div>
+    <div>
+        <i class="fa fa-facebook-square" aria-hidden="true">kdngjlk</i>
+
+    </div>
+        
+</div>
 
     
 </div>

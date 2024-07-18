@@ -1,11 +1,9 @@
 <!-- resources/views/partials/header.blade.php -->
 <div class="container">
     <p>{{ $formattedDate }}</p>
-</div>
-<div class="container">
-    <div>
+    <p>
         Latest:
-    </div>
+</p>
     <div class="ticker-container">
         <div class="ticker-item">Apple in a Basket</div>
         <div class="ticker-item">Boy at the Park</div>
@@ -18,6 +16,12 @@
             <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
         </a>
     </div>
+
+</div>
+<div class="website-header-main-title">
+    <p>
+	Improving Learning: Developing Measures of Accountability and Evaluating their Association with Student’s Gains in Achievement in Nepal
+	</p>
 
 </div>
 

@@ -54,6 +54,25 @@ header {
     justify-content: right;
 }
 
+.website-header-main-title {
+    background: linear-gradient(125deg, rgb(64, 115, 115), rgb(48, 52, 64));
+    color: white;
+    box-shadow: 10px 10px 10px black;
+}
+
+.website-header-main-title p{
+    line-height: 1.6;
+    margin-bottom: 5px;
+    font-family: 'Open Sans', serif;
+    font-size: 1.8vw;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-weight: 900;text-shadow: 0 4px 4px #23168e, 0 2px 8px #10ff00, 0 2px 200px #000000;
+}
+
+
 nav ul {
     list-style: none;
     padding: 0;

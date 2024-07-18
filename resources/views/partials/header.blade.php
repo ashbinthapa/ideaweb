@@ -1,6 +1,6 @@
 <!-- resources/views/partials/header.blade.php -->
 <div class="container">
-    <p>{{ $formattedDate }}</p>    
+    <p>{{ $formattedDate }}</p>
 </div>
 <div class="container">
     <div>
@@ -13,14 +13,15 @@
         <div class="ticker-item">Dog in the Kennel</div>
         <div class="ticker-item">Eggs in the Bowl</div>
     </div>
-    <div>
-        <i class="fa fa-facebook-square" aria-hidden="true">kdngjlk</i>
-
+    <div class="header-facebook-icon">
+        <a href="https://www.facebook.com/isernepalofficial/?ref=aymt_homepage_panel&eid=ARCZ8VyOFfG6ZEJl7hyyqg7-0wlTGyxtRQQwQU2psMbjH59aUSY-HQ5o-YnV3JiVR1NXkPDdzVzzR-06">
+            <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+        </a>
     </div>
-        
+
 </div>
 
-    
+
 </div>
 <nav>
     <ul>

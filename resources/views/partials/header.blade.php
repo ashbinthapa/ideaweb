@@ -22,7 +22,9 @@
     <p>
 	Improving Learning: Developing Measures of Accountability and Evaluating their Association with Student’s Gains in Achievement in Nepal
 	</p>
-
+</div>
+<div class="header-image-container">
+    <img src="{{ asset('uploads/idea header image.jpg') }}" alt="Idea-Iser">
 </div>
 
 

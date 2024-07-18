@@ -73,6 +73,17 @@ header {
 }
 
 
+.header-image-container {
+    width: 100%;
+    height: 100%;
+}
+
+.header-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container */
+}
+
 nav ul {
     list-style: none;
     padding: 0;

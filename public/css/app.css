@@ -1,5 +1,5 @@
 /* public/css/app.css */
-.container {
+.container-ashbin {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
@@ -9,31 +9,31 @@
 }
 
 @media (min-width: 576px) {
-    .container {
+    .container-ashbin {
         max-width: 540px;
     }
 }
 
 @media (min-width: 768px) {
-    .container {
+    .container-ashbin {
         max-width: 720px;
     }
 }
 
 @media (min-width: 992px) {
-    .container {
+    .container-ashbin {
         max-width: 960px;
     }
 }
 
 @media (min-width: 1200px) {
-    .container {
+    .container-ashbin {
         max-width: 1140px;
     }
 }
 
 @media (min-width: 1400px) {
-    .container {
+    .container-ashbin {
         max-width: 1320px;
     }
 }

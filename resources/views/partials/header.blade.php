@@ -1,5 +1,5 @@
 <!-- resources/views/partials/header.blade.php -->
-<div class="container">
+<div class="container-ashbin">
     <p>{{ $formattedDate }}</p>
     <p>
         Latest:

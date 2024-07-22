@@ -72,6 +72,10 @@ header {
     text-shadow: 0 4px 4px #23168e, 0 2px 8px #10ff00, 0 2px 200px #000000;
 }
 
+.website-header-main-title a {
+    color : white;
+}
+
 
 .header-image-container {
     width: 100%;

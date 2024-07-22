@@ -77,6 +77,8 @@ header {
 }
 
 
+
+
 .header-image-container {
     width: 100%;
     height: 100%;
@@ -87,26 +89,6 @@ header {
     height: 100%;
     object-fit: cover; /* Ensures the image covers the container */
 }
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-
 /* css for news ticker */
 
 .ticker-container {

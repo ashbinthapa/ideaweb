@@ -111,3 +111,22 @@ header {
     left: 0;
     transition: top 0.5s ease-in-out;
 }
+
+.widget-title {
+    border-bottom: 2px solid #289dcc;
+    font-size: 18px;
+    margin-bottom: 15px;
+    padding-bottom: 0;
+}
+
+.widget-title span{
+    background: linear-gradient(125deg, rgb(64, 115, 115), rgb(48, 52, 64));
+    color: white;
+    box-shadow: 10px 10px 10px black;
+    padding: 6px 12px;
+    display: inline-block;
+
+}
+.widget-title h3{
+line-height: 1.2;
+}

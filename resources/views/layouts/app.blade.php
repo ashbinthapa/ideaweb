@@ -15,12 +15,12 @@
         @include('partials.header')
     </header>
 
-    <div class="container">
+    <div class="container ashbin-padding-top">
         <div class="row">
-            <div class="col-8">
+            <div class="col-lg-8 col-12">
                 @yield('content')
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-12">
                 @include('partials.body')
             </div>
         </div>

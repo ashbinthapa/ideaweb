@@ -112,14 +112,18 @@ header {
     transition: top 0.5s ease-in-out;
 }
 
-.widget-title {
-    border-bottom: 2px solid #289dcc;
+.ashbin-padding-top {
+    padding-top: 40px;
+}
+
+.ashbin-widget-title {
+    border-bottom: 2px solid #143968;
     font-size: 18px;
     margin-bottom: 15px;
     padding-bottom: 0;
 }
 
-.widget-title span{
+.ashbin-widget-title span{
     background: linear-gradient(125deg, rgb(64, 115, 115), rgb(48, 52, 64));
     color: white;
     box-shadow: 10px 10px 10px black;
@@ -127,6 +131,6 @@ header {
     display: inline-block;
 
 }
-.widget-title h3{
+.ashbin-widget-title h3{
 line-height: 1.2;
 }

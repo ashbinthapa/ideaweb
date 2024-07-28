@@ -145,3 +145,25 @@ line-height: 1.2;
     height: auto;
     padding: 5px 0 5px 0;
 }
+
+.website-footer-main-title {
+    background: linear-gradient(125deg, rgb(64, 115, 115), rgb(48, 52, 64));
+    color: white;
+    box-shadow: 10px 10px 10px black;
+}
+
+.website-footer-main-title p{
+    line-height: 1.6;
+    margin-bottom: 5px;
+    font-size: 0.9vw;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-weight: 500;
+    text-shadow: 0 4px 4px #23168e, 0 2px 8px #10ff00, 0 2px 200px #000000;
+}
+
+.website-footer-main-title a {
+    color : white;
+}

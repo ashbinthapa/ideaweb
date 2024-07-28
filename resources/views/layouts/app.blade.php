@@ -21,7 +21,7 @@
                 @yield('content')
             </div>
             <div class="col-lg-4 col-12">
-                @include('partials.body')
+                @include('partials.right-widget')
             </div>
         </div>
     </div>

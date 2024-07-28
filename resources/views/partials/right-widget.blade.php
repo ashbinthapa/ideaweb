@@ -1,4 +1,4 @@
-<!-- resources/views/partials/body.blade.php -->
+<!-- resources/views/partials/right-widget.blade.php -->
 <div class="container ashbin-a-tag ashbin-widget-image">
     <h3 class="ashbin-widget-title"><span>Recent Activities</span></h3>
     <ul>

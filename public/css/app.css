@@ -134,3 +134,14 @@ header {
 .ashbin-widget-title h3{
 line-height: 1.2;
 }
+
+.ashbin-a-tag a{
+    text-decoration: none;
+    color: #143968;
+}
+
+.ashbin-widget-image img{
+    max-width: 100%;
+    height: auto;
+    padding: 5px 0 5px 0;
+}

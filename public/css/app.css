@@ -150,6 +150,7 @@ line-height: 1.2;
     background: linear-gradient(125deg, rgb(64, 115, 115), rgb(48, 52, 64));
     color: white;
     box-shadow: 10px 10px 10px black;
+    width: 99%;
 }
 
 .website-footer-main-title p{
@@ -166,4 +167,16 @@ line-height: 1.2;
 
 .website-footer-main-title a {
     color : white;
+}
+
+.ashbin-footer-img {
+    padding: 20px 200px 20px 200px;
+}
+
+.ashbin-footer-img div{
+    text-align: center;
+}
+.ashbin-footer-img img{
+    max-width: 100%;
+    height: auto;
 }

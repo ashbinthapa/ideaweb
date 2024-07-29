@@ -94,7 +94,7 @@ header {
 /* css for news ticker */
 
 .ticker-container {
-    width: 300px;
+    width: 100%;
     height: 30px;
     overflow: hidden;
     background-color: #fff;

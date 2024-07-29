@@ -132,7 +132,7 @@ header {
 
 }
 .ashbin-widget-title h3{
-line-height: 1.2;
+    line-height: 1.2;
 }
 
 .ashbin-a-tag a{
@@ -179,4 +179,35 @@ line-height: 1.2;
 .ashbin-footer-img img{
     max-width: 100%;
     height: auto;
+}
+
+
+.ashbin-footer-widgets-wrapper {
+    background: linear-gradient(125deg, rgb(64, 115, 115), rgb(48, 52, 64));
+}
+
+.ashbin-footer-widget-title {
+    border-bottom: 2px solid #143968;
+    font-size: 18px;
+    margin-bottom: 15px;
+    padding-bottom: 0;
+}
+
+.ashbin-footer-widget-title span{
+    background-color: #143968;
+    color: white;
+    box-shadow: 10px 10px 10px black;
+    padding: 6px 12px;
+    display: inline-block;
+
+}
+
+.website-footer-content a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.ashbin-footer-widget-title h3{
+    line-height: 1.2;
 }

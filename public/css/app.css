@@ -184,6 +184,7 @@ header {
 
 .ashbin-footer-widgets-wrapper {
     background: linear-gradient(125deg, rgb(64, 115, 115), rgb(48, 52, 64));
+    padding-top: 15px;
 }
 
 .ashbin-footer-widget-title {
@@ -210,4 +211,14 @@ header {
 
 .ashbin-footer-widget-title h3{
     line-height: 1.2;
+}
+
+.ashbin-footer-end p {
+    text-align: center;
+}
+
+.ashbin-footer-end a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

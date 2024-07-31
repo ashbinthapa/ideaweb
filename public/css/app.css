@@ -219,12 +219,12 @@ header {
 }
 
 /*data page css starts*/
-.accordion-button {
+.ashbin-accordion-design {
     background-color: #143968 !important;
     color: white !important;
 }
 
-.accordion-button::after {
+.ashbin-accordion-design::after {
     background-color: white !important;
 }
 /*data page css ends*/

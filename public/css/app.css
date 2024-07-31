@@ -76,9 +76,6 @@ header {
     color : white;
 }
 
-
-
-
 .header-image-container {
     width: 100%;
     height: 100%;
@@ -90,8 +87,6 @@ header {
     object-fit: cover; /* Ensures the image covers the container */
 }
 
-
-/* css for news ticker */
 
 .ticker-container {
     width: 100%;
@@ -222,3 +217,14 @@ header {
     justify-content: center;
     align-items: center;
 }
+
+/*data page css starts*/
+.accordion-button {
+    background-color: #143968 !important;
+    color: white !important;
+}
+
+.accordion-button::after {
+    background-color: white !important;
+}
+/*data page css ends*/

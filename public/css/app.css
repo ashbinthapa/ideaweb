@@ -228,3 +228,21 @@ header {
     background-color: white !important;
 }
 /*data page css ends*/
+
+/*main title design starts*/
+.ashbin-section {
+    text-align: center;
+}
+
+.ashbin-title {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.ashbin-subtitle {
+    font-size: 1.5em;
+    color: #666;
+}
+/*main title design ends*/

@@ -8,9 +8,8 @@ use Carbon\Carbon;
 
 class HeaderController extends Controller
 {
-    public function getlivedate()
+    public function getLiveDate()
     {
-        $formattedDate = Carbon::now()->format('l, F j, Y');
-        return view('index', compact('formattedDate'));
+        return Carbon::now()->format('l, F j, Y');
     }
 }

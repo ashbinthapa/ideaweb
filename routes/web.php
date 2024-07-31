@@ -2,12 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\HeaderController;
+use App\Http\Controllers\HomeController;
+
+use App\Http\Controllers\DataController;
 
 
-Route::get('/', [HeaderController::class, 'getlivedate']);
-
-Route::get('/header', [HeaderController::class, 'getlivedate']);
-
-
-
+Route::get('/', [HomeController::class, 'index']);
+Route::get('/data', [DataController::class, 'index']);

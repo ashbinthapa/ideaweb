@@ -1,11 +1,11 @@
-<!-- resources/views/investigators.blade.php -->
+<!-- resources/views/staff.blade.php -->
 @extends('layouts.app')
 
-@section('title', 'investigators')
+@section('title', 'staff')
 
 @section('content')
 <div class="ashbin-section">
-    <p class="ashbin-title">Investigators</p>
+    <p class="ashbin-title">Staff</p>
     <div class="row">
         <div class="col-3 ashbin-investigator-image">
             <img src="{{ asset('uploads/idea header image.jpg') }}" alt="Idea-Iser">

@@ -8,8 +8,13 @@ use App\Http\Controllers\DataController;
 
 use App\Http\Controllers\PublicationController;
 
+use App\Http\Controllers\InvestigatorController;
+
+
 Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/data', [DataController::class, 'index']);
 
 Route::get('/publication', [PublicationController::class, 'index']);
+
+Route::get('/investigators', [InvestigatorController::class, 'index']);

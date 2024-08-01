@@ -124,8 +124,8 @@ header {
     box-shadow: 10px 10px 10px black;
     padding: 6px 12px;
     display: inline-block;
-
 }
+
 .ashbin-widget-title h3{
     line-height: 1.2;
 }
@@ -230,19 +230,39 @@ header {
 /*data page css ends*/
 
 /*main title design starts*/
-.ashbin-section {
-    text-align: center;
-}
-
 .ashbin-title {
     font-size: 2em;
     font-weight: bold;
     color: #333;
     text-transform: uppercase;
+    text-align: center;
+
 }
 
 .ashbin-subtitle {
     font-size: 1.5em;
     color: #666;
+    text-align: center;
+
 }
 /*main title design ends*/
+
+.ashbin-investigator-image img{
+    max-width: 100%;
+    height: auto;
+    padding: 5px 0 5px 0;
+}
+
+.ashbin-button {
+    font-size: 18px;
+    margin-bottom: 15px;
+    padding-bottom: 0;
+}
+
+.ashbin-button span{
+    background: linear-gradient(125deg, rgb(64, 115, 115), rgb(48, 52, 64));
+    color: white;
+    box-shadow: 10px 10px 10px black;
+    padding: 6px 12px;
+    display: inline-block;
+}

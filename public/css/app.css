@@ -275,3 +275,7 @@ header {
     height: auto;
     padding: 5px 0 5px 0;
 }
+
+.ashbin-contact-content {
+    text-align: center;
+}

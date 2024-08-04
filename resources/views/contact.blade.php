@@ -8,7 +8,7 @@
     <div class="card">
         <div class="card-body">
             <p class="ashbin-title">contact</p>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text ashbin-contact-content">With supporting text below as a natural lead-in to additional content.</p>
         </div>
     </div>
 </div>

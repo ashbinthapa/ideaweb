@@ -33,3 +33,5 @@ Route::get('/collaborator', [CollaboratorController::class, 'index']);
 Route::get('/product', [ProductController::class, 'index']);
 
 Route::get('/capacitybuilding', [CapacityBuildingController::class, 'index']);
+
+Route::get('/capacitybuilding-single', [CapacityBuildingController::class, 'single']);

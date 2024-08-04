@@ -10,4 +10,9 @@ class CapacityBuildingController extends Controller
     {
         return view('capacitybuilding');
     }
+
+    public function single()
+    {
+        return view('capacitybuilding-single');
+    }
 }

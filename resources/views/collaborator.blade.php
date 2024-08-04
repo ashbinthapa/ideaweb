@@ -1,4 +1,4 @@
-<!-- resources/views/staff.blade.php -->
+<!-- resources/views/collaborator.blade.php -->
 @extends('layouts.app')
 
 @section('title', 'collaborator')

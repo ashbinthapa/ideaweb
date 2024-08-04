@@ -1,4 +1,4 @@
-<!-- resources/views/capacitybuilding.blade.php -->
+<!-- resources/views/capacitybuilding-single.blade.php -->
 @extends('layouts.app')
 
 @section('title', 'capacity building')

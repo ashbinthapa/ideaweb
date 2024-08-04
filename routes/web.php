@@ -20,6 +20,8 @@ use App\Http\Controllers\CapacityBuildingController;
 
 use App\Http\Controllers\GalleryController;
 
+use App\Http\Controllers\ActivitiesController;
+
 Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/data', [DataController::class, 'index']);
@@ -39,3 +41,7 @@ Route::get('/capacitybuilding', [CapacityBuildingController::class, 'index']);
 Route::get('/capacitybuilding-single', [CapacityBuildingController::class, 'single']);
 
 Route::get('/gallery', [GalleryController::class, 'index']);
+
+Route::get('/activity', [ActivitiesController::class, 'index']);
+
+Route::get('/activity-single', [ActivitiesController::class, 'single']);

@@ -267,3 +267,11 @@ header {
     display: inline-block;
 }
 
+.ashbin-gallery-img div{
+    text-align: center;
+}
+.ashbin-gallery-img img{
+    max-width: 100%;
+    height: auto;
+    padding: 5px 0 5px 0;
+}

@@ -22,6 +22,8 @@ use App\Http\Controllers\GalleryController;
 
 use App\Http\Controllers\ActivitiesController;
 
+use App\Http\Controllers\ContactController;
+
 Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/data', [DataController::class, 'index']);
@@ -45,3 +47,5 @@ Route::get('/gallery', [GalleryController::class, 'index']);
 Route::get('/activity', [ActivitiesController::class, 'index']);
 
 Route::get('/activity-single', [ActivitiesController::class, 'single']);
+
+Route::get('/contact', [ContactController::class, 'index']);

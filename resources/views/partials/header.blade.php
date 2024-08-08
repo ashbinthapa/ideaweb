@@ -27,7 +27,7 @@
     <img src="{{ asset('uploads/idea header image.jpg') }}" alt="Idea-Iser">
 </div>
 
-<div class="container-fluid website-header-main-title">
+<div class="container-fluid ashbin-sticky-top website-header-main-title">
     <div class="container">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">

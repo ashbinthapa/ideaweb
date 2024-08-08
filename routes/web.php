@@ -20,7 +20,7 @@ use App\Http\Controllers\CapacityBuildingController;
 
 use App\Http\Controllers\GalleryController;
 
-use App\Http\Controllers\ActivitiesController;
+use App\Http\Controllers\ActivityController;
 
 use App\Http\Controllers\ContactController;
 
@@ -44,8 +44,8 @@ Route::get('/capacitybuilding-single', [CapacityBuildingController::class, 'sing
 
 Route::get('/gallery', [GalleryController::class, 'index']);
 
-Route::get('/activity', [ActivitiesController::class, 'index']);
+Route::get('/activity', [ActivityController::class, 'index']);
 
-Route::get('/activity-single', [ActivitiesController::class, 'single']);
+Route::get('/activity-single', [ActivityController::class, 'single']);
 
 Route::get('/contact', [ContactController::class, 'index']);

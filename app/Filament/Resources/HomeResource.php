@@ -13,6 +13,9 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
+use Mohamedsabil83\FilamentFormsTinyeditor\Components\TinyEditor;
+
+
 class HomeResource extends Resource
 {
     protected static ?string $model = Home::class;
@@ -23,7 +26,11 @@ class HomeResource extends Resource
     {
         return $form
             ->schema([
-                //
+                TinyEditor::make('content')
+                    ->fileAttachmentsDisk('local')
+                    ->fileAttachmentsVisibility('public')
+                    ->fileAttachmentsDirectory('uploads')
+                    ->columnSpan('full')
             ]);
     }
 
@@ -31,7 +38,8 @@ class HomeResource extends Resource
     {
         return $table
             ->columns([
-                //
+                Tables\Columns\TextColumn::make('content')
+                    ->label('Contect')
             ])
             ->filters([
                 //

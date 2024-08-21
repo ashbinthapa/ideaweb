@@ -2,13 +2,19 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Home; // Import the home model
+
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
     public function index()
     {
-        // Your logic for the home page
-        return view('index'); // Assuming you have a welcome.blade.php view
+        $posts_all = Home::all();
+        $data = [
+            'posts_all' => $posts_all
+        ];
+
+        return view('index', ['data' => $data]);
     }
 }

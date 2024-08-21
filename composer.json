@@ -9,6 +9,7 @@
         "filament/filament": "3.2.57",
         "laravel/framework": "^11.9",
         "laravel/tinker": "^2.9",
+        "mohamedsabil83/filament-forms-tinyeditor": "^2.3",
         "nesbot/carbon": "^3.6"
     },
     "require-dev": {

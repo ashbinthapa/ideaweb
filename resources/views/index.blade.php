@@ -26,7 +26,7 @@
 <div>
     <p>
         @foreach ($data['posts_all'] as $post)
-        {{ strip_tags($post->content) }}
+        {!! $post->content !!}
         @endforeach
     </p>
 </div>

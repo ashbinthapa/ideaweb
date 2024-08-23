@@ -17,7 +17,7 @@
         <div id="collapse{{ $a }}" class="accordion-collapse collapse collapse @if($loop->first) show @endif" data-bs-parent="#accordionExample">
             <div class="accordion-body">
                 DATA <a href="{{$post->data}}">Click Here</a><br>
-                CODEBOOK <a href="{{$post->codebook}}">Click Here</a>
+                CODEBOOK <a href="{{ asset('uploads/' . $post->codebook) }}">Click Here</a>
             </div>
         </div>
     </div>

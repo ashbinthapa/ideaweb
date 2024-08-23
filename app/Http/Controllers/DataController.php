@@ -4,11 +4,18 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Models\Data; // Import the data model
+
+
 class DataController extends Controller
 {
     public function index()
     {
-        // Your logic for the data page
-        return view('data'); // Assuming you have a data.blade.php view
+        $posts_all = Data::all();
+        $data = [
+            'posts_all' => $posts_all
+        ];
+
+        return view('data', ['data' => $data]);
     }
 }

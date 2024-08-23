@@ -39,7 +39,7 @@ class HomeResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('content')
-                    ->label('Contect')
+                    ->label('Content')
             ])
             ->filters([
                 //

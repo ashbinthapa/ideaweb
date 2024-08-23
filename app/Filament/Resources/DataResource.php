@@ -23,7 +23,12 @@ class DataResource extends Resource
     {
         return $form
             ->schema([
-                //
+                Forms\Components\TextInput::make('title')
+                    ->label('Title'),
+                Forms\Components\TextInput::make('data')
+                    ->label('Data Link'),
+                Forms\Components\TextInput::make('codebook')
+                    ->label('Codecook Link')
             ]);
     }
 
@@ -31,7 +36,8 @@ class DataResource extends Resource
     {
         return $table
             ->columns([
-                //
+                Tables\Columns\TextColumn::make('title')
+                    ->label('Title')
             ])
             ->filters([
                 //

@@ -1,18 +1,11 @@
 <!-- resources/views/product.blade.php -->
 @extends('layouts.app')
 
-@section('title', 'product')
+@section('title', 'nepali-accountability-assessment-tool')
 
 @section('content')
 <div class="ashbin-section">
-    <p class="ashbin-title">PRODUCTS</p>
-</div>
-<div>
-    <p>The products of this project will include the NAAT survey instruments,
-        comprehensive panel data with potential to answer high priority scientific
-        and policy questions about factors associated with school accountability and student achievement,
-        and dissemination of the data and the findings at the local, national and global levels.
-    </p>
+    <p class="ashbin-title">Nepali Accountability Assessment Tool</p>
 </div>
 <div class="accordion" id="accordionExample">
     @php $a = 1; @endphp

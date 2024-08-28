@@ -4,6 +4,9 @@
 @section('title', 'data')
 
 @section('content')
+<div class="ashbin-section">
+    <p class="ashbin-title">DATA</p>
+</div>
 <div class="accordion" id="accordionExample">
     @php $a = 1; @endphp
     @foreach ($data['posts_all'] as $post)

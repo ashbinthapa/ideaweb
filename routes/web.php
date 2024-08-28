@@ -24,6 +24,8 @@ use App\Http\Controllers\ActivityController;
 
 use App\Http\Controllers\ContactController;
 
+use App\Http\Controllers\NaatController;
+
 Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/data', [DataController::class, 'index']);
@@ -49,3 +51,5 @@ Route::get('/activity', [ActivityController::class, 'index']);
 Route::get('/activity-single', [ActivityController::class, 'single']);
 
 Route::get('/contact', [ContactController::class, 'index']);
+
+Route::get('/product/nepali-accountability-assessment-tool', [NaatController::class, 'index']);

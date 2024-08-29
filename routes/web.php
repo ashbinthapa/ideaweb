@@ -52,4 +52,4 @@ Route::get('/activity-single', [ActivityController::class, 'single']);
 
 Route::get('/contact', [ContactController::class, 'index']);
 
-Route::get('/product/nepali-accountability-assessment-tool', [NaatController::class, 'index']);
+Route::get('/products/nepali-accountability-assessment-tool', [NaatController::class, 'index']);

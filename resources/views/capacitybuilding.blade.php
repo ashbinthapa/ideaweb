@@ -6,6 +6,9 @@
 @section('content')
 <div class="ashbin-section">
     <p class="ashbin-title">Capacity Building</p>
+    <div>The project has conducted various training and development activities.
+        All of the training activities are targeted to build capacity of stakeholders, and/or young researchers at ISER-N.
+    </div>
     @foreach ($data['posts_all'] as $post)
     <div class="card">
         <div class="card-header">
@@ -20,7 +23,7 @@
             </p>
             <p>{{ Str::limit(strip_tags($post->content), 250) }}</p>
             <div>
-                <a href="capacitybuilding/{{ $post->slug }}">
+                <a href="{{ $post->slug }}">
                     <h3 class="ashbin-button"><span>Read More</span></h3>
                 </a>
             </div>

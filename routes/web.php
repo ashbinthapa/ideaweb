@@ -42,7 +42,7 @@ Route::get('/product', [ProductController::class, 'index']);
 
 Route::get('/capacitybuilding', [CapacityBuildingController::class, 'index']);
 
-Route::get('/capacitybuilding-single', [CapacityBuildingController::class, 'single']);
+Route::get('/capacitybuilding/{slug}', [CapacityBuildingController::class, 'single']);
 
 Route::get('/gallery', [GalleryController::class, 'index']);
 

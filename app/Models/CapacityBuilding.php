@@ -8,4 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class CapacityBuilding extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'title',
+        'slug',
+        'content',
+        'published_at',
+        'seo_description',
+        'image'
+    ];
 }

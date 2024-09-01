@@ -20,7 +20,7 @@
             </p>
             <p>{{ Str::limit(strip_tags($post->content), 250) }}</p>
             <div>
-                <a href="{{ $post->slug }}">
+                <a href="activity/{{ $post->slug }}">
                     <h3 class="ashbin-button"><span>Read More</span></h3>
                 </a>
             </div>
@@ -28,5 +28,4 @@
     </div>
     @endforeach
 </div>
-
 @endsection

@@ -8,7 +8,11 @@
     <div class="card">
         <div class="card-body">
             <p class="ashbin-title">contact</p>
-            <p class="card-text ashbin-contact-content">With supporting text below as a natural lead-in to additional content.</p>
+            @foreach ($data['posts_all'] as $post)
+            <p class="card-text ashbin-contact-content"> {!! $post->content !!}
+                @break
+                @endforeach
+            </p>
         </div>
     </div>
 </div>

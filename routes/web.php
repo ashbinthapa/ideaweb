@@ -48,6 +48,8 @@ Route::get('/gallery', [GalleryController::class, 'index']);
 
 Route::get('/activity', [ActivityController::class, 'index']);
 
+Route::get('/activity/{slug}', [ActivityController::class, 'single']);
+
 Route::get('/activity-single', [ActivityController::class, 'single']);
 
 Route::get('/contact', [ContactController::class, 'index']);

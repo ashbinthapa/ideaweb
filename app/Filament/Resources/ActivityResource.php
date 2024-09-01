@@ -12,6 +12,8 @@ use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Mohamedsabil83\FilamentFormsTinyeditor\Components\TinyEditor;
+
 
 class ActivityResource extends Resource
 {
@@ -23,7 +25,18 @@ class ActivityResource extends Resource
     {
         return $form
             ->schema([
-                //
+                Forms\Components\TextInput::make('title')
+                    ->label('Title'),
+                Forms\Components\TextInput::make('slug')
+                    ->label('Slug'),
+                Forms\Components\TextInput::make('published_at')
+                    ->label('published_at'),
+                TinyEditor::make('content')
+                    ->fileAttachmentsDisk('local')
+                    ->fileAttachmentsVisibility('public')
+                    ->fileAttachmentsDirectory('uploads')
+                    ->columnSpan('full'),
+
             ]);
     }
 
@@ -31,7 +44,8 @@ class ActivityResource extends Resource
     {
         return $table
             ->columns([
-                //
+                Tables\Columns\TextColumn::make('title')
+                    ->label('Title')
             ])
             ->filters([
                 //

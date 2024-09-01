@@ -52,6 +52,9 @@ Route::get('/activity/{slug}', [ActivityController::class, 'single']);
 
 Route::get('/activity-single', [ActivityController::class, 'single']);
 
-Route::get('/contact', [ContactController::class, 'index']);
+Route::get('/contact', [ContactController::class, 'index'])->name('contact');
+
+Route::post('/contact', [ContactController::class, 'submitContactForm'])->name('contact.submit');
+
 
 Route::get('/products/nepali-accountability-assessment-tool', [NaatController::class, 'index']);

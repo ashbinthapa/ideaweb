@@ -3,13 +3,12 @@
     {{ $formattedDate }}<br>
     Latest:
     <div class="ticker-container">
-        <div class="ticker-item">Apple in a Basket</div>
-        <div class="ticker-item">Boy at the Park</div>
-        <div class="ticker-item">Cat on the Rooftop</div>
-        <div class="ticker-item">Dog in the Kennel</div>
-        <div class="ticker-item">Eggs in the Bowl</div>
+        @foreach ($data['posts_all'] as $post)
+        <a href="{{ $post->slug}} ">
+            <div class="ticker-item">{{ $post->title }}</div>
+        </a>
+        @endforeach
     </div>
-
     <div class="header-facebook-icon">
         <a href="https://www.facebook.com/isernepalofficial/?ref=aymt_homepage_panel&eid=ARCZ8VyOFfG6ZEJl7hyyqg7-0wlTGyxtRQQwQU2psMbjH59aUSY-HQ5o-YnV3JiVR1NXkPDdzVzzR-06">
             <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>

@@ -1,4 +1,3 @@
-<!-- resources/views/activity-single.blade.php -->
 @extends('layouts.app')
 
 @section('title', 'activity')
@@ -10,7 +9,8 @@
             <h5 class="card-title">{{ $data->title }}</h5>
         </div>
         <div class="card-body">
-            <p>@if($data->published_at)
+            <p>
+                @if($data->published_at)
                 {{ date('F j, Y', strtotime($data->published_at)) }}
                 @else
                 {{ date('F j, Y', strtotime($data->updated_at)) }}

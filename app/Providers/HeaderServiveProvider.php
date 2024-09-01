@@ -5,6 +5,9 @@ namespace App\Providers;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 use App\Http\Controllers\HeaderController;
+use App\Models\Activity;
+use Carbon\Carbon;
+
 
 class HeaderServiveProvider extends ServiceProvider
 {
@@ -22,9 +25,11 @@ class HeaderServiveProvider extends ServiceProvider
     public function boot(): void
     {
         View::composer('partials.header', function ($view) {
-            $headerController = new HeaderController(); // Create an instance of the controller
-            $formattedDate = $headerController->getLiveDate(); // Call the non-static method
-            $view->with('formattedDate', $formattedDate);
+            $posts_all = Activity::all(); // Fetch all activities
+            $formattedDate = Carbon::now()->format('l, F j, Y'); // Get the current formatted date
+
+            $view->with('data', ['posts_all' => $posts_all])
+                ->with('formattedDate', $formattedDate);
         });
     }
 }

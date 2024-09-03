@@ -17,13 +17,22 @@
         <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-3 col-xxl-3">
                 <h3 class="ashbin-footer-widget-title"><span>Contact Us</span></h3>
-                <ul>
-                    <li><a href="#"> DISSEMINATION WORKSHOP FOR IMPROVING LEARNING: DEVELOPING MEASURES OF ACCOUNTABILITY AND EVALUATING THEIR ASSOCIATION WITH STUDENTS’ GAINS IN ACHIEVEMENT IN NEPAL</a></li>
-                    <li><a href="#"> OBSERVATION TRAINING FOR OBSERVER</a></li>
-                    <li><a href="#"> OBSERVATION TRAINING FOR OBSERVER</a></li>
-                    <li><a href="#"> OBSERVATION TRAINING FOR OBSERVER</a></li>
-                    <li><a href="#"> OBSERVATION TRAINING FOR OBSERVER</a></li>
-                </ul>
+
+                <a href="https://www.google.com/maps/place/Institute+for+Social+and+Environmental+Research-Nepal/@27.6512804,48.5096276,3z/data=!4m16!1m9!2m8!1sinstitute+of+social+research!3m6!1sinstitute+of+social+research!2sFulbari,+Bharatpur+44200,+Nepal!3s0x3994fa196843d6a9:0x575cad9ee67236b9!4m2!1d84.3699767!2d27.6409078!3m5!1s0x3994fa3c167e33df:0xdc393700902f9460!8m2!3d27.6515034!4d84.3692294!16s%2Fg%2F1hm5m4sqy?entry=ttu&g_ep=EgoyMDI0MDgyOC4wIKXMDSoASAFQAw%3D%3D"> <i class="fa fa-home" aria-hidden="true"></i>
+                    Bharatpur-15, Fulbari, Chitwan, Nepal <i class="fa fa-map-marker"></i>
+                </a><br>
+                <a href="#"><i class="fa fa-phone"></i>+977-56-591054 |56-592406</a>
+                <br>
+                <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>iser.nepal@outlook.com</a>
+                <br>
+                <div class="row">
+                    <div class="col-6">
+                        <img src="{{ asset('/uploads/logos/logo-ISER-N-120x120-transparent.png') }}" alt="ISER Nepal Logo" class="logo-img">
+                    </div>
+                    <div class="col-6">
+                        <img src="{{ asset('/uploads/logos/logo-umich-1-150x150.png') }}" alt="UMich Logo" class="logo-img">
+                    </div>
+                </div>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3 col-xxl-3">
                 <h3 class="ashbin-footer-widget-title"><span>Important Links</span></h3>
@@ -49,17 +58,13 @@
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3 col-xxl-3">
                 <h3 class="ashbin-footer-widget-title"><span>Feedback</span></h3>
-                <ul>
-                    <li><a href="#"> DISSEMINATION WORKSHOP FOR IMPROVING LEARNING: DEVELOPING MEASURES OF ACCOUNTABILITY AND EVALUATING THEIR ASSOCIATION WITH STUDENTS’ GAINS IN ACHIEVEMENT IN NEPAL</a></li>
-                    <li><a href="#"> OBSERVATION TRAINING FOR OBSERVER</a></li>
-                    <li><a href="#"> OBSERVATION TRAINING FOR OBSERVER</a></li>
-                    <li><a href="#"> OBSERVATION TRAINING FOR OBSERVER</a></li>
-                    <li><a href="#"> OBSERVATION TRAINING FOR OBSERVER</a></li>
-                </ul>
+                <img src="{{ asset('/uploads/logos/World_3D_Grey-1024x605.png') }}" alt="world-map-logo" class="feedback-img">
+                <div class="sliding-text">
+                    <span>Please provide your feedback and suggestions.</span>
+                </div>
             </div>
         </div>
     </div>
-
 </div>
 
 <div class="container-fluid ashbin-footer-end">

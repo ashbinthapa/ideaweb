@@ -9,11 +9,14 @@
 
     <h3 class="ashbin-widget-title"><span>Important Links</span></h3>
     <ul>
-        <li><a href="#"> DISSEMINATION WORKSHOP FOR IMPROVING LEARNING: DEVELOPING MEASURES OF ACCOUNTABILITY AND EVALUATING THEIR ASSOCIATION WITH STUDENTS’ GAINS IN ACHIEVEMENT IN NEPAL</a></li>
-        <li><a href="#"> OBSERVATION TRAINING FOR OBSERVER</a></li>
-        <li><a href="#"> OBSERVATION TRAINING FOR OBSERVER</a></li>
-        <li><a href="#"> OBSERVATION TRAINING FOR OBSERVER</a></li>
-        <li><a href="#"> OBSERVATION TRAINING FOR OBSERVER</a></li>
+        <li><a href="https://isernepal.org.np/"> ISER-N</a></li>
+        <li><a href="https://spe.psc.isr.umich.edu/"> Program in Society, Population, and Environment</a></li>
+        <li><a href="https://www.psc.isr.umich.edu/"> Population Studies Center</a></li>
+        <li><a href="https://umich.edu/"> University of Michigan</a></li>
+        <li><a href="https://www.ukri.org/councils/esrc/"> DFID-ESRC</a></li>
+        <li><a href="https://www.bharatpurmun.gov.np/"> Bharatpur Municipality</a></li>
+        <li><a href="https://www.ero.gov.np/"> Education Review Office</a></li>
+        <li><a href="https://loaf.isernepal.org/">LOAF</a></li>
     </ul>
 
     <h3 class="ashbin-widget-title"><span>Images and Videos</span></h3>

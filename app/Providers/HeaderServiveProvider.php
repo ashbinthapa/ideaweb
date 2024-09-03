@@ -33,7 +33,7 @@ class HeaderServiveProvider extends ServiceProvider
         });
 
         View::composer('partials.right-widget', function ($view) {
-            $posts_all = Activity::all(); // Fetch all activities
+            $posts_all = Activity::latest()->take(5)->get(); // Fetch the latest 5 activities
 
             $view->with('data', ['posts_all' => $posts_all]);
         });

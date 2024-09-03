@@ -77,7 +77,5 @@
                 <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
             </a>
         </div>
-
     </div>
-
 </div>

@@ -37,5 +37,11 @@ class HeaderServiveProvider extends ServiceProvider
 
             $view->with('data', ['posts_all' => $posts_all]);
         });
+
+        View::composer('partials.footer', function ($view) {
+            $posts_all = Activity::latest()->take(5)->get(); // Fetch the latest 5 activities
+
+            $view->with('data', ['posts_all' => $posts_all]);
+        });
     }
 }

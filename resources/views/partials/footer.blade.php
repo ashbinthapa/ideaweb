@@ -38,11 +38,9 @@
             <div class="col-sm-12 col-md-6 col-lg-3 col-xxl-3">
                 <h3 class="ashbin-footer-widget-title"><span>Recent Posts</span></h3>
                 <ul>
-                    <li><a href="#"> DISSEMINATION WORKSHOP FOR IMPROVING LEARNING: DEVELOPING MEASURES OF ACCOUNTABILITY AND EVALUATING THEIR ASSOCIATION WITH STUDENTS’ GAINS IN ACHIEVEMENT IN NEPAL</a></li>
-                    <li><a href="#"> OBSERVATION TRAINING FOR OBSERVER</a></li>
-                    <li><a href="#"> OBSERVATION TRAINING FOR OBSERVER</a></li>
-                    <li><a href="#"> OBSERVATION TRAINING FOR OBSERVER</a></li>
-                    <li><a href="#"> OBSERVATION TRAINING FOR OBSERVER</a></li>
+                    @foreach ($data['posts_all'] as $post)
+                    <li><a href="{{ $post->slug }}">{{ $post->title }}</a></li>
+                    @endforeach
                 </ul>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3 col-xxl-3">

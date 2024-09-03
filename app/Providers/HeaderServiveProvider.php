@@ -31,5 +31,11 @@ class HeaderServiveProvider extends ServiceProvider
             $view->with('data', ['posts_all' => $posts_all])
                 ->with('formattedDate', $formattedDate);
         });
+
+        View::composer('partials.right-widget', function ($view) {
+            $posts_all = Activity::all(); // Fetch all activities
+
+            $view->with('data', ['posts_all' => $posts_all]);
+        });
     }
 }

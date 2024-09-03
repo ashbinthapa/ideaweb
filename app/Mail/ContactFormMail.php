@@ -3,7 +3,6 @@
 namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
@@ -13,12 +12,14 @@ class ContactFormMail extends Mailable
 {
     use Queueable, SerializesModels;
 
+    public $data;
+
     /**
      * Create a new message instance.
      */
-    public function __construct()
+    public function __construct($data)
     {
-        //
+        $this->data = $data;
     }
 
     /**
@@ -37,7 +38,8 @@ class ContactFormMail extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'view.name',
+            view: 'emails.contact-form',  // Update to point to your actual view
+            with: ['data' => $this->data]  // Pass the data to the view
         );
     }
 

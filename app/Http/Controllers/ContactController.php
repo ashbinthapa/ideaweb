@@ -3,49 +3,52 @@
 namespace App\Http\Controllers;
 
 use App\Models\Contact;
+use App\Models\ContactForm;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use App\Mail\ContactFormMail;
-use Illuminate\Support\Facades\Mail; // Add this line
-use App\Models\ContactForm; // Import the ContactForm model
 
 class ContactController extends Controller
 {
-    public function index()
+    public function showForm()
     {
-        $posts_all = Contact::all();
-        $data = [
-            'posts_all' => $posts_all
-        ];
-
-        return view('contact', ['data' => $data]);
+        return view('contact.form');
     }
 
-    public function submitContactForm(Request $request)
+    public function submitForm(Request $request)
     {
-        $request->validate([
-            'name' => 'required',
-            'email' => 'required|email',
-            'subject' => 'nullable',
-            'message' => 'nullable'
+        $sanitizedData = $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|email|max:255',
+            'subject' => 'required|string|max:255',
+            'message' => 'required|string',
         ]);
 
-        // Sanitize input
-        $sanitizedData = $request->only(['name', 'email', 'subject', 'message']);
         $sanitizedData['name'] = htmlspecialchars($sanitizedData['name'], ENT_QUOTES, 'UTF-8');
         $sanitizedData['email'] = htmlspecialchars($sanitizedData['email'], ENT_QUOTES, 'UTF-8');
         $sanitizedData['subject'] = htmlspecialchars($sanitizedData['subject'], ENT_QUOTES, 'UTF-8');
         $sanitizedData['message'] = htmlspecialchars($sanitizedData['message'], ENT_QUOTES, 'UTF-8');
 
-        // Save contact form data to database
+        // Store the sanitized data in the ContactForm model
         ContactForm::create($sanitizedData);
 
-        try {
-            // Send email
-            Mail::to('info.isernepal@gmail.com')->send(new ContactFormMail($sanitizedData));
-        } catch (\Exception $e) {
-            return redirect()->back()->with('error', 'There was an issue sending your message. Please try again later.');
-        }
+        // Send the email
+        Mail::to('info.isernepal@gmail.com')->send(new ContactFormMail($sanitizedData));
 
-        return redirect()->back()->with('success', 'Thank you for your message. We will get back to you soon!');
+        return back()->with('success', 'Your message has been sent successfully!');
+    }
+
+    public function index()
+    {
+        // Retrieve all data from both models
+        $contacts_all = Contact::all();
+        $contact_forms_all = ContactForm::all();
+
+        $data = [
+            'contacts_all' => $contacts_all,
+            'contact_forms_all' => $contact_forms_all,
+        ];
+
+        return view('contact', ['data' => $data]);
     }
 }

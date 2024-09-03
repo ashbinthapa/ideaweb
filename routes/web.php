@@ -56,6 +56,10 @@ Route::get('/contact', [ContactController::class, 'index'])->name('contact.index
 Route::get('/contact/form', [ContactController::class, 'showForm'])->name('contact.form');
 Route::post('/contact/form', [ContactController::class, 'submitForm'])->name('contact.submit');
 
+Route::get('/contact/thankyou', function () {
+    return view('emails.thank-you'); // This should be the view for your thank you page
+})->name('contact.thankyou');
+
 
 
 Route::get('/products/nepali-accountability-assessment-tool', [NaatController::class, 'index']);

@@ -33,7 +33,7 @@
             </div>
         </div>
         <div class="ashbin-investigator-explanation">
-            {{ $post->content }}
+            {!! $post->content !!}
         </div>
         <div>
             <a href="{{ $post->cvupload }}">
@@ -44,5 +44,4 @@
     @endforeach
 
 </div>
-
 @endsection

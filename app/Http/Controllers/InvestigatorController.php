@@ -14,6 +14,6 @@ class InvestigatorController extends Controller
             'posts_all' => $posts_all
         ];
 
-        return view('index', ['data' => $data]);
+        return view('investigators', ['data' => $data]);
     }
 }

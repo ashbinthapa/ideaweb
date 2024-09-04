@@ -17,5 +17,6 @@ class Investigator extends Model
         'details',
         'content',
         'image',
+        'cvupload',
     ];
 }

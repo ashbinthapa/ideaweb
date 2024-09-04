@@ -10,7 +10,11 @@
 
     <div class="row">
         <div class="col-3 ashbin-investigator-image">
+            @if(!empty($post->image))
             <img src="{{ $post->image }}" alt="Idea-Iser">
+            @else
+            <img src="/uploads/dummy image.jpg" alt="Idea-Iser">
+            @endif
         </div>
         <div class="col-9">
             <div class="ashbin-investigator-name">
@@ -21,6 +25,8 @@
             </div>
         </div>
     </div>
+    @endforeach
+
 </div>
 
 @endsection

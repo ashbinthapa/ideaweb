@@ -23,7 +23,17 @@ class StaffResource extends Resource
     {
         return $form
             ->schema([
-                //
+                Forms\Components\TextInput::make('name')
+                    ->label('Name'),
+                Forms\Components\TextInput::make('position')
+                    ->label('Position'),
+                Forms\Components\TextInput::make('detail')
+                    ->label('Detail'),
+                Forms\Components\TextInput::make('email')
+                    ->label('Email'),
+                Forms\Components\TextInput::make('image')
+                    ->label('Profile Image Link'),
+                Forms\Components\Checkbox::make('michigan'),
             ]);
     }
 
@@ -31,7 +41,8 @@ class StaffResource extends Resource
     {
         return $table
             ->columns([
-                //
+                Tables\Columns\TextColumn::make('name')
+                    ->label('Name')
             ])
             ->filters([
                 //

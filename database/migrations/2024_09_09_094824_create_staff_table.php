@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('detail')->nullable();
             $table->string('email')->nullable();
             $table->string('image')->nullable();
+            $table->boolean('michigan')->default(0);
         });
     }
 

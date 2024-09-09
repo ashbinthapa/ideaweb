@@ -15,6 +15,7 @@ class Staff extends Model
         'email',
         'detail',
         'image',
-        'email'
+        'email',
+        'michigan'
     ];
 }

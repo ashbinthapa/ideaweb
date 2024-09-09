@@ -17,4 +17,3 @@ class StaffController extends Controller
         return view('staff', ['data' => $data]);
     }
 }
-}

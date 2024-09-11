@@ -28,50 +28,49 @@
 
 <div class="container-fluid ashbin-sticky-top website-header-main-title">
     <div class="container">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg ashbin-padding">
             <div class="container-fluid">
-                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse ashbin-active" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-home"></i>HOME</a>
+                            <a class="nav-link {{ request()->is('/') ? 'active' : '' }}" aria-current="page" href="/"><i class="fa fa-home"></i> HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">DATA</a>
+                            <a class="nav-link {{ request()->is('data') ? 'active' : '' }}" href="/data">DATA</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">PUBLICATIONS</a>
+                            <a class="nav-link {{ request()->is('publication') ? 'active' : '' }}" href="/publication">PUBLICATIONS</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle {{ request()->is('people/*') ? 'active' : '' }}" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 PEOPLE
                             </a>
                             <ul class="dropdown-menu website-header-main-title">
-                                <li><a class="dropdown-item" href="#">INVESTIGATORS</a></li>
-                                <li><a class="dropdown-item" href="#">STAFF</a></li>
-                                <li><a class="dropdown-item" href="#">COLLABORATORS</a></li>
+                                <li><a class="dropdown-item" href="/people/investigators">INVESTIGATORS</a></li>
+                                <li><a class="dropdown-item" href="/people/staff">STAFF</a></li>
+                                <li><a class="dropdown-item" href="/people/collaborator">COLLABORATORS</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">PRODUCTS</a>
+                            <a class="nav-link {{ request()->is('product') ? 'active' : '' }}" href="/product">PRODUCTS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">CAPACITY BUILDING</a>
+                            <a class="nav-link {{ request()->is('capacitybuilding') ? 'active' : '' }}" href="/capacitybuilding">CAPACITY BUILDING</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">GALLERY</a>
+                            <a class="nav-link {{ request()->is('gallery') ? 'active' : '' }}" href="/gallery">GALLERY</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">ACTIVITIES</a>
+                            <a class="nav-link {{ request()->is('activity') ? 'active' : '' }}" href="/activity">ACTIVITIES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">CONTACT</a>
+                            <a class="nav-link {{ request()->is('contact') ? 'active' : '' }}" href="/contact">CONTACT</a>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search">
+                    <form class="d-flex ashbin-header-search" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>

@@ -285,8 +285,22 @@ header {
     position: sticky;
     top: 0;
     z-index: 999;
-
 }
+
+.ashbin-active li .nav-link.hover {
+    background-color: #143968 !important;
+}
+
+.ashbin-active li .nav-link.active {
+    background-color: #143968 !important;
+    color: #ffffff;
+}
+
+
+.ashbin-padding {
+    padding: 0px 0px 0px 0px !important;
+}
+
 
 .logo-img {
     height: 100px; /* Set the desired height */

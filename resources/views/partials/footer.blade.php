@@ -6,10 +6,9 @@
         </p>
     </div>
     <div class="row ashbin-footer-img">
-        <div class="col-lg-3 col-6"><a href="#"> <img src="{{ asset('uploads/idea header image.jpg') }}" alt="Idea-Iser"></a></div>
-        <div class="col-lg-3 col-6"><a href="#"> <img src="{{ asset('uploads/idea header image.jpg') }}" alt="Idea-Iser"></a></div>
-        <div class="col-lg-3 col-6"><a href="#"> <img src="{{ asset('uploads/idea header image.jpg') }}" alt="Idea-Iser"></a></div>
-        <div class="col-lg-3 col-6"><a href="#"> <img src="{{ asset('uploads/idea header image.jpg') }}" alt="Idea-Iser"></a></div>
+        <div class="col-lg-4 col-6"><a href="#"> <img src="{{ asset('/uploads/logos/logo-ISER-N-120x120-transparent.png') }}" alt="Idea-Iser"></a></div>
+        <div class="col-lg-4 col-6"><a href="#"> <img src="{{ asset('/uploads/logos/logo-M-PSC-block-141x120.jpg') }}" alt="Idea-Iser"></a></div>
+        <div class="col-lg-4 col-6"><a href="#"> <img src="{{ asset('/uploads/logos/logo-ESRC-213x120.jpg') }}" alt="Idea-Iser"></a></div>
     </div>
 </div>
 <div class="container-fluid ashbin-footer-widgets-wrapper">

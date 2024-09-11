@@ -20,7 +20,8 @@
     </ul>
 
     <h3 class="ashbin-widget-title"><span>Images and Videos</span></h3>
-    <div><a href="#"> <img src="{{ asset('uploads/idea header image.jpg') }}" alt="Idea-Iser"></a></div>
-    <div><a href="#"> <img src="{{ asset('uploads/idea header image.jpg') }}" alt="Idea-Iser"></a></div>
-    <div><a href="#"> <img src="{{ asset('uploads/idea header image.jpg') }}" alt="Idea-Iser"></a></div>
+    <div><a href="#"> <img src="{{ asset('/uploads/activities/Untitled-1-low-1-800x445.jpg') }}" alt="Idea-Iser"></a></div>
+    <div><a href="#"> <img src="{{ asset('/uploads/idea-slider1.jpg') }}" alt="Idea-Iser"></a></div>
+    <div><a href="#"> <img src="{{ asset('/uploads/idea-slider5.jpg') }}" alt="Idea-Iser"></a></div>
+
 </div>

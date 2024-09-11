@@ -24,19 +24,23 @@
                 {{ $post->position }}
             </div>
             <div class="ashbin-investigator-role">
+                @if(!empty($post->detail))
                 {{ $post->detail }}
+                @endif
             </div>
             <div class="ashbin-investigator-role">
-                {{ $post->email }}
+                @if(!empty($post->email))
+                Email:{{ $post->email }}
+                @endif
             </div>
         </div>
     </div>
     @endif
     @endforeach
+    <p class="ashbin-title">University Of Michigan Staff</p>
 
     @foreach ($data['posts_all'] as $post)
     @if(($post->michigan) == 1)
-    <p class="ashbin-title">University Of Michigan Staff</p>
     <div class="row">
         <div class="col-3 ashbin-investigator-image">
             @if(!empty($post->image))
@@ -53,10 +57,14 @@
                 {{ $post->position }}
             </div>
             <div class="ashbin-investigator-role">
+                @if(!empty($post->detail))
                 {{ $post->detail }}
+                @endif
             </div>
             <div class="ashbin-investigator-role">
-                {{ $post->email }}
+                @if(!empty($post->email))
+                Email:{{ $post->email }}
+                @endif
             </div>
         </div>
     </div>

@@ -26,6 +26,8 @@ use App\Http\Controllers\ContactController;
 
 use App\Http\Controllers\NaatController;
 
+use App\Http\Controllers\SearchController;
+
 Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/data', [DataController::class, 'index']);
@@ -42,15 +44,13 @@ Route::get('/product', [ProductController::class, 'index']);
 
 Route::get('/capacitybuilding', [CapacityBuildingController::class, 'index']);
 
-Route::get('/capacitybuilding/{slug}', [CapacityBuildingController::class, 'single']);
+Route::get('/capacitybuilding/{slug}', [CapacityBuildingController::class, 'single'])->name('capacitybuilding.single');
 
 Route::get('/gallery', [GalleryController::class, 'index']);
 
 Route::get('/activity', [ActivityController::class, 'index']);
 
-Route::get('/activity/{slug}', [ActivityController::class, 'single']);
-
-Route::get('/activity-single', [ActivityController::class, 'single']);
+Route::get('/activity/{slug}', [ActivityController::class, 'single'])->name('activity.single');
 
 Route::get('/contact', [ContactController::class, 'index'])->name('contact.index');
 Route::get('/contact/form', [ContactController::class, 'showForm'])->name('contact.form');
@@ -60,6 +60,7 @@ Route::get('/contact/thankyou', function () {
     return view('emails.thank-you'); // This should be the view for your thank you page
 })->name('contact.thankyou');
 
-
-
 Route::get('/products/nepali-accountability-assessment-tool', [NaatController::class, 'index']);
+
+/*serarch controller*/
+Route::get('/search', [SearchController::class, 'search'])->name('search');

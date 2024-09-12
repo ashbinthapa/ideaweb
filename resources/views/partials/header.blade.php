@@ -58,13 +58,14 @@
                             <a class="nav-link {{ request()->is('product') ? 'active' : '' }}" href="/product">PRODUCTS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link {{ request()->is('capacitybuilding') ? 'active' : '' }}" href="/capacitybuilding">CAPACITY BUILDING</a>
+                            <a class="nav-link {{ request()->is('capacitybuilding/*') || request()->is('capacitybuilding') ? 'active' : '' }}" href="/capacitybuilding">CAPACITY BUILDING</a>
                         </li>
+
                         <li class="nav-item">
                             <a class="nav-link {{ request()->is('gallery') ? 'active' : '' }}" href="/gallery">GALLERY</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link {{ request()->is('activity') ? 'active' : '' }}" href="/activity">ACTIVITIES</a>
+                            <a class="nav-link {{ request()->is('activity/*') || request()->is('activity') ? 'active' : '' }}" href="/activity">ACTIVITIES</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link {{ request()->is('contact') ? 'active' : '' }}" href="/contact">CONTACT</a>

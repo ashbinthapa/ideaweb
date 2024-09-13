@@ -3,7 +3,7 @@
     <h3 class="ashbin-widget-title"><span>Recent Activities</span></h3>
     <ul>
         @foreach ($data['posts_all'] as $post)
-        <li><a href="{{ $post->slug }}">{{ $post->title }}</a></li>
+        <li><a href="/activity/{{ $post->slug }}">{{ $post->title }}</a></li>
         @endforeach
     </ul>
 
